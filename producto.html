@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - MACCTAG</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .product-detail {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6b7280;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s;
+        }
+        .back-btn:hover {
+            color: #1f2937;
+        }
+        .product-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .product-image-large {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-image-large img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 0.5rem;
+        }
+        .product-detail-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-detail-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .product-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #dbeafe;
+            color: #2563eb;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-bottom: 1.5rem;
+        }
+        .product-price-large {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 2rem;
+        }
+        .product-description-section {
+            margin-bottom: 2rem;
+        }
+        .product-description-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        .product-description-section p {
+            color: #4b5563;
+            line-height: 1.8;
+        }
+        .btn-add-large {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            background: #2563eb;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1.125rem;
+            transition: background 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-add-large:hover {
+            background: #1d4ed8;
+        }
+        .additional-info {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 0.5rem;
+        }
+        .additional-info h3 {
+            margin-bottom: 0.75rem;
+        }
+        .additional-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .additional-info li {
+            color: #6b7280;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MACCTAG</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="gaming-coleccionables.html">Gaming</a>
+                <a href="productos-digitales.html">Digitales</a>
+            </nav>
+            <div class="user-actions">
+                <button class="icon-btn" onclick="window.location.href='login.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn" onclick="window.location.href='carrito.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                    </svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="product-detail" id="productDetail">
+        <a href="javascript:history.back()" class="back-btn">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 19l-7-7 7-7"></path>
+            </svg>
+            Volver a la tienda
+        </a>
+        <div id="productContent"></div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>MACCTAG</h3>
+                <p style="color: #9ca3af;">Tu tienda online de confianza para tecnología, videojuegos y muebles.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="gaming-coleccionables.html">Gaming/Coleccionables</a></li>
+                    <li><a href="productos-digitales.html">Productos Digitales</a></li>
+                    <li><a href="login.html">Mi cuenta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MACCTAG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'));
+        const product = products.find(p => p.id === productId);
+        
+        if (product) {
+            const categoryLabel = product.category === 'physical' ? 'Producto Físico' : 'Videojuego Digital';
+            const additionalInfo = product.category === 'videogame' 
+                ? '<li>✓ Entrega instantánea por correo electrónico</li>' 
+                : '';
+            
+            document.getElementById('productContent').innerHTML = `
+                <div class="product-detail-grid">
+                    <div class="product-image-large">
+                        <img src="${product.image}" alt="${product.name}">
+                    </div>
+                    
+                    <div class="product-detail-info">
+                        <h1>${product.name}</h1>
+                        
+                        <span class="product-badge">${categoryLabel}</span>
+                        
+                        <p class="product-price-large">${formatCurrency(product.price)}</p>
+                        
+                        <div class="product-description-section">
+                            <h2>Descripción</h2>
+                            <p>${product.description}</p>
+                        </div>
+                        
+                        <button class="btn-add-large" onclick="addToCart(${product.id})">
+                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                            </svg>
+                            Agregar al carrito
+                        </button>
+                        
+                        <div class="additional-info">
+                            <h3>Información adicional</h3>
+                            <ul>
+                                <li>✓ Envío gratis en compras mayores a $200,000</li>
+                                <li>✓ Garantía de devolución de 30 días</li>
+                                <li>✓ Soporte al cliente 24/7</li>
+                                ${additionalInfo}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.title = `${product.name} - MACCTAG`;
+        } else {
+            document.getElementById('productContent').innerHTML = `
+                <div style="text-align: center; padding: 4rem;">
+                    <h2>Producto no encontrado</h2>
+                    <p style="margin: 1rem 0;">Lo sentimos, el producto que buscas no existe.</p>
+                    <a href="index.html" class="btn-primary">Volver al inicio</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

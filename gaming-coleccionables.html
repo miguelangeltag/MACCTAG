@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming / Coleccionables - MACCTAG</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MACCTAG</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="gaming-coleccionables.html" class="active">Gaming</a>
+                <a href="productos-digitales.html">Digitales</a>
+            </nav>
+            <div class="user-actions">
+                <button class="icon-btn" onclick="window.location.href='login.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn" onclick="window.location.href='carrito.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                    </svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="products-page">
+        <div class="page-header">
+            <h1>Gaming / Coleccionables</h1>
+            <p>Explora nuestra colección completa de figuras PVC, libros, mangas y accesorios gaming de alta calidad.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>MACCTAG</h3>
+                <p style="color: #9ca3af;">Tu tienda online de confianza para tecnología, videojuegos y muebles.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="gaming-coleccionables.html">Gaming/Coleccionables</a></li>
+                    <li><a href="productos-digitales.html">Productos Digitales</a></li>
+                    <li><a href="login.html">Mi cuenta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MACCTAG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        const physicalProducts = products.filter(p => p.category === 'physical');
+        const grid = document.getElementById('productGrid');
+        
+        physicalProducts.forEach(product => {
+            const card = document.createElement('a');
+            card.href = `producto.html?id=${product.id}`;
+            card.className = 'product-card';
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-price">${formatCurrency(product.price)}</p>
+                    <button class="btn-add-cart" onclick="event.preventDefault(); addToCart(${product.id})">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                        </svg>
+                        Agregar al carrito
+                    </button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>

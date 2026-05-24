@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACCTAG - Tu tienda gaming y geek</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MACCTAG</a>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="gaming-coleccionables.html">Gaming</a>
+                <a href="productos-digitales.html">Digitales</a>
+            </nav>
+            <div class="user-actions">
+                <button class="icon-btn" onclick="window.location.href='login.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn" onclick="window.location.href='carrito.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                        <path d="M9 6V3M15 6V3"></path>
+                    </svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a MACCTAG</h1>
+            <p>Tu tienda gaming y geek: figuras coleccionables, videojuegos digitales, libros y accesorios</p>
+            <button class="btn-primary" onclick="document.querySelector('.categories').scrollIntoView({behavior: 'smooth'})">
+                Empezar a Comprar
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <!-- Gaming/Coleccionables -->
+            <div class="category-section">
+                <div class="category-grid">
+                    <div class="category-content">
+                        <h2>Gaming/Coleccionables</h2>
+                        <p>Explora una gran variedad de figuras inspiradas en videojuegos y anime, incluyendo personajes icónicos como Kirby, Demon Slayer y Hollow Knight. Nuestra colección incluye figuras PVC, ediciones especiales y artículos exclusivos para fans y coleccionistas.</p>
+                        
+                        <div class="category-features">
+                            <div class="feature">
+                                <h3>Figuras PVC</h3>
+                                <p>Colección exclusiva de figuras de videojuegos y anime con detalles premium.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <h3>Libros y manga</h3>
+                                <p>Descubre novelas, manga y libros educativos para todos los gustos. Desde títulos de Mario Mendoza y la saga Wigetta, hasta guías de programación y desarrollo web como libros de JavaScript y tecnología.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <h3>Accesorios gaming</h3>
+                                <p>Encuentra accesorios diseñados para mejorar tu experiencia gamer y de productividad.</p>
+                            </div>
+                        </div>
+
+                        <a href="gaming-coleccionables.html" class="btn-primary">Ver todos los productos</a>
+                    </div>
+
+                    <div class="image-grid">
+                        <img src="images/image-6.png" alt="Figuras Demon Slayer">
+                        <img src="images/image-10.png" alt="Figuras Kirby">
+                        <img src="images/image-7.png" alt="Libros Wigetta">
+                        <img src="images/image-8.png" alt="Libro JavaScript">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos Digitales -->
+            <div class="category-section category-alt">
+                <div class="category-grid">
+                    <div class="category-content">
+                        <h2>Productos digitales</h2>
+                        
+                        <div class="category-features">
+                            <div class="feature">
+                                <h3>Elden Ring - Steam Key</h3>
+                                <p>RPG de acción épico desarrollado por FromSoftware y George R.R. Martin. Explora Las Tierras Intermedias y enfrenta jefes legendarios.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <h3>Cyberpunk 2077 - Epic Games Key</h3>
+                                <p>Sumérgete en Night City, una megalópolis futurista. Vive una historia épica con múltiples finales en este RPG de mundo abierto.</p>
+                            </div>
+                            
+                            <div class="feature">
+                                <h3>Red Dead Redemption 2 - Xbox Key</h3>
+                                <p>Vive la épica historia de Arthur Morgan en el salvaje oeste. Mundo abierto masivo con gráficos impresionantes.</p>
+                            </div>
+                        </div>
+
+                        <a href="productos-digitales.html" class="btn-primary">Ver todos los juegos</a>
+                    </div>
+
+                    <div class="image-grid">
+                        <img src="images/image-4.png" alt="Elden Ring">
+                        <img src="images/image-2.png" alt="Hollow Knight">
+                        <img src="images/image-3.png" alt="Red Dead Redemption 2">
+                        <img src="images/image-1.png" alt="Stardew Valley">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>MACCTAG</h3>
+                <p style="color: #9ca3af;">Tu tienda online de confianza para tecnología, videojuegos y muebles.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="gaming-coleccionables.html">Gaming/Coleccionables</a></li>
+                    <li><a href="productos-digitales.html">Productos Digitales</a></li>
+                    <li><a href="login.html">Mi cuenta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MACCTAG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
