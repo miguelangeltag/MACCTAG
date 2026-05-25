@@ -515,3 +515,27 @@ footer {
   color: #d1d5db;
   margin: 0 auto 1rem;
 }
+.video-demo {
+    padding: 4rem 2rem;
+    background-color: #111827;
+    text-align: center;
+}
+
+.video-demo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.video-demo p {
+    color: #d1d5db;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
