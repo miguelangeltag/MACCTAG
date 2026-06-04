@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming / Coleccionables - MACCTAG</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">MACCTAG</a>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="gaming-coleccionables.html" class="active">Gaming</a>
+                <a href="productos-digitales.html">Digitales</a>
+            </nav>
+            <div class="user-actions">
+                <button class="icon-btn" onclick="window.location.href='login.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+                <button class="icon-btn" onclick="window.location.href='carrito.html'">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                    </svg>
+                    <span class="cart-badge" style="display: none;">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="products-page">
+        <div class="page-header">
+            <h1>Gaming / Coleccionables</h1>
+            <p>Explora nuestra colección completa de figuras PVC, libros, mangas y accesorios gaming de alta calidad.</p>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>MACCTAG</h3>
+                <p style="color: #9ca3af;">Tu tienda online de confianza para tecnología, videojuegos y muebles.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="gaming-coleccionables.html">Gaming/Coleccionables</a></li>
+                    <li><a href="productos-digitales.html">Productos Digitales</a></li>
+                    <li><a href="login.html">Mi cuenta</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" title="Facebook" style="color: inherit;">
+                      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://x.com/" target="_blank" rel="noopener" title="X" style="color: inherit;">
+                      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" title="Instagram" style="color: inherit;">
+                      <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MACCTAG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Teclados y ratones
+        [
+          { id: 16, name: 'Teclado Mecánico Gaming RGB TKL', price: 89000,
+            image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+            category: 'physical', description: 'Teclado mecánico tenkeyless con iluminación RGB completa. Switches táctiles duraderos, ideal para gaming y productividad. Estructura compacta. Cable USB trenzado desmontable.' },
+          { id: 17, name: 'Teclado Gaming Membrana RGB Completo', price: 72000,
+            image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+            category: 'physical', description: 'Teclado de membrana con retroiluminación RGB y teclas multimedia. Diseño ergonómico con reposamuñecas. 104 teclas en español con anti-ghosting.' },
+          { id: 18, name: 'Ratón Gaming Óptico 7200 DPI RGB', price: 78000,
+            image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+            category: 'physical', description: 'Ratón gaming óptico con sensor de 7200 DPI ajustable en 4 niveles. 6 botones programables e iluminación RGB. Diseño ergonómico para largas sesiones.' },
+          { id: 19, name: 'Ratón Inalámbrico Gaming 2.4GHz', price: 115000,
+            image: 'https://images.unsplash.com/photo-1605773527852-c546a8584ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+            category: 'physical', description: 'Ratón inalámbrico gaming 2.4GHz de baja latencia. Batería recargable hasta 30h. Sensor óptico 3200 DPI ajustable. Receptor USB nano incluido.' },
+          { id: 20, name: 'Combo Teclado + Ratón Gaming RGB', price: 118000,
+            image: 'https://images.unsplash.com/photo-1593640408182-31c228e04da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
+            category: 'physical', description: 'Kit completo teclado + ratón gaming con RGB sincronizado. Teclado 104 teclas en español. Ratón DPI ajustable hasta 3600. Plug & play.' }
+        ].forEach(p => products.push(p));
+
+        const physicalProducts = products.filter(p => p.category === 'physical');
+        const grid = document.getElementById('productGrid');
+        
+        physicalProducts.forEach(product => {
+            const card = document.createElement('a');
+            card.href = `producto.html?id=${product.id}`;
+            card.className = 'product-card';
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-name">${product.name}</h3>
+                    <p class="product-price">${formatCurrency(product.price)}</p>
+                    <button class="btn-add-cart" onclick="event.preventDefault(); addToCart(${product.id})">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M9 2L7 6H1L4 20H20L23 6H17L15 2H9Z"></path>
+                        </svg>
+                        Agregar al carrito
+                    </button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
