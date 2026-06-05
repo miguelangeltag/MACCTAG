@@ -25,47 +25,7 @@ const products = [
     category: 'physical',
     description: 'Conjunto completo de 6 figuras del aclamado videojuego Hollow Knight. Incluye The Knight, Hornet y otros personajes icónicos. Detalles meticulosos y acabados de alta calidad. Material PVC resistente. Perfecto para fans del metroidvania indie.'
   },
-  // Teclados y Ratones
-  {
-    id: 16,
-    name: 'Teclado Mecánico Gaming RGB TKL',
-    price: 89000,
-    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Teclado mecánico tenkeyless con iluminación RGB completa. Switches táctiles duraderos, ideal para gaming y productividad. Estructura compacta que libera espacio en tu escritorio. Compatible con Windows y Mac. Cable USB trenzado desmontable.'
-  },
-  {
-    id: 17,
-    name: 'Teclado Gaming Membrana RGB Completo',
-    price: 72000,
-    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Teclado de membrana con retroiluminación RGB multicolor y teclas multimedia. Diseño ergonómico con reposamuñecas integrado. 104 teclas en español con anti-ghosting en teclas de juego. Ideal para gaming y oficina.'
-  },
-  {
-    id: 18,
-    name: 'Ratón Gaming Óptico 7200 DPI RGB',
-    price: 78000,
-    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Ratón gaming óptico con sensor de hasta 7200 DPI ajustable en 4 niveles. 6 botones programables e iluminación RGB. Diseño ergonómico para largas sesiones de juego. Compatible con Windows 7/8/10/11. Cable USB de 1.5m trenzado.'
-  },
-  {
-    id: 19,
-    name: 'Ratón Inalámbrico Gaming 2.4GHz',
-    price: 115000,
-    image: 'https://images.unsplash.com/photo-1605773527852-c546a8584ea3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Ratón inalámbrico gaming con conexión 2.4GHz de baja latencia. Batería recargable con hasta 30 horas de autonomía. Sensor óptico de 3200 DPI ajustable. Receptor USB nano incluido. Superficie compatible con cualquier mousepad.'
-  },
-  {
-    id: 20,
-    name: 'Combo Teclado + Ratón Gaming RGB',
-    price: 118000,
-    image: 'https://images.unsplash.com/photo-1593640408182-31c228e04da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Kit completo con teclado de membrana y ratón gaming, ambos con iluminación RGB sincronizada. Teclado 104 teclas en español. Ratón con DPI ajustable hasta 3600. Conexión USB plug & play. Ideal para armar tu setup gamer a buen precio.'
-  },
+
   // Libros y Mangas
   {
     id: 8,
