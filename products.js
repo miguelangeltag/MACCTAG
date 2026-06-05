@@ -58,14 +58,6 @@ const products = [
     category: 'physical',
     description: 'Ratón inalámbrico gaming con conexión 2.4GHz de baja latencia. Batería recargable con hasta 30 horas de autonomía. Sensor óptico de 3200 DPI ajustable. Receptor USB nano incluido. Superficie compatible con cualquier mousepad.'
   },
-  {
-    id: 20,
-    name: 'Combo Teclado + Ratón Gaming RGB',
-    price: 118000,
-    image: 'https://images.unsplash.com/photo-1593640408182-31c228e04da1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400',
-    category: 'physical',
-    description: 'Kit completo con teclado de membrana y ratón gaming, ambos con iluminación RGB sincronizada. Teclado 104 teclas en español. Ratón con DPI ajustable hasta 3600. Conexión USB plug & play. Ideal para armar tu setup gamer a buen precio.'
-  },
   
   
   // Libros y Mangas
